@@ -9,6 +9,8 @@ Pod::Spec.new do |s|
     s.source       = {:git => 'https://github.com/CoderMJLee/MJRefresh.git', :tag => s.version}
     s.source_files = 'MJRefresh/**/*.{h,m}'
     s.exclude_files = 'MJRefresh/include/**'
-    s.resource     = 'MJRefresh/MJRefresh.bundle'
+    # s.resource     = 'MJRefresh/MJRefresh.bundle'
+    s.resource  = "MJRefresh/*.{bundle,storyboard,xib,xcassets}"
+
     s.requires_arc = true
 end
