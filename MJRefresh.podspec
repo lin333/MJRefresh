@@ -13,4 +13,6 @@ Pod::Spec.new do |s|
     s.resource  = "MJRefresh/**/*.{bundle,storyboard,xib,xcassets}"
 
     s.requires_arc = true
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
+  s.swift_version = "5.0"
 end
